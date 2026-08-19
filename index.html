@@ -1,310 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!----testddd-->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
-    <meta name = "viewport" content = "width-device-width, initial-scale=1.0">
-    <title>Shayan Haque Personal Website </title>
-    <link rel = "stylesheet" href = "style.css">
-    <script src="https://kit.fontawesome.com/ce1edb2775.js" crossorigin="anonymous"></script></head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Shayan Haque is a third-year Johns Hopkins computer science student building analytics, AI, sports technology, and full-stack software products."
+    >
+    <meta property="og:title" content="Shayan Haque - Software, Data &amp; AI">
+    <meta
+      property="og:description"
+      content="Portfolio for Shayan Haque: Johns Hopkins CS, sports analytics, AI engineering, and product-minded software projects."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/shayanHeadShot-1.png">
+    <title>Shayan Haque - Software, Data &amp; AI</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ce1edb2775.js" crossorigin="anonymous" defer></script>
+  </head>
   <body>
-    <div id = "header">
-        <div class = "container">
-            <nav>
-                <img src = "images/logo.png" class = "logo">
-                <ul id ="sidemenu">
-                    <li><a href = "#header">Home</a></li>
-                    <li><a href = "#about">About</a></li>
-                  <!--<li><a href = "#tutoring">Tutoring</a></li>--->  
-                    <li><a href = "#porfolio">Portfolio</a></li>
-                    <li><a href = "#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class = "header-text">
-                <p>Leader | Problem Solver | Creator </p>
-                <h1>Hi, I'm <span>Shayan.</span></h1>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="nav-inner">
+        <a class="brand" href="#hero" aria-label="Shayan Haque home">
+          sh<span>.</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul id="primary-navigation" class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main id="main">
+      <section id="hero" class="hero-section">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Hello, world!</p>
+            <h1>
+              Shayan<br>
+              <span>Haque</span>
+            </h1>
+            <p class="role-line">
+              <span aria-hidden="true">&gt;</span>
+              <span id="role-display">Third-year CS @ Johns Hopkins</span>
+            </p>
+            <p class="hero-description">
+              I build data-driven software and AI systems across sports analytics, forecasting,
+              and product engineering. Currently a third-year Computer Science student at Johns Hopkins,
+              focused on machine learning, backend systems, and clean user-facing tools.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button primary" href="mailto:shayanhaqueny@gmail.com">Email Me</a>
+              <a class="button secondary" href="#projects">View Projects</a>
             </div>
+
+            <div class="social-row" aria-label="Profile links">
+              <a href="https://github.com/shaque32" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/shayanarikhaque/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="mailto:shayanhaqueny@gmail.com" aria-label="Email">
+                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-photo" aria-label="Portrait of Shayan Haque">
+            <img src="images/shayanHeadShot-1.png" alt="Shayan Haque">
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-panel">
+        <div class="section-heading">
+          <h2>About Me</h2>
+          <span></span>
         </div>
 
-    </div>
-    <!------ about ------------------>
-    <div id = "about">
-        <div class="container">
-            <div class = "row">
-                <div class = "about-col-1">
-                    <img src="images/shayanHeadShot-1.png">
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I am a third-year Computer Science student at Johns Hopkins University from the NYC area,
+              with internship experience at the Baltimore Ravens and PE Solutions. My strongest work
+              combines modeling, data pipelines, and software interfaces that help people make better decisions.
+            </p>
+            <p>
+              Recently, I built NFL matchup models over player-tracking data, shipped a production
+              electricity-demand forecasting service, and founded LineupOptimization.com, a baseball analytics
+              platform used by Atlantic League front offices.
+            </p>
+            <p>
+              I am especially interested in internships and early-career roles across software engineering,
+              machine learning, sports analytics, AI product engineering, and data-intensive backend systems.
+            </p>
+          </div>
+
+          <div class="stat-grid" aria-label="Quick facts">
+            <article>
+              <strong>JHU</strong>
+              <span>B.S. Computer Science</span>
+            </article>
+            <article>
+              <strong>2</strong>
+              <span>Recent internships</span>
+            </article>
+            <article>
+              <strong>5</strong>
+              <span>Featured projects</span>
+            </article>
+            <article>
+              <strong>2028</strong>
+              <span>Expected graduation</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <h2>Skills</h2>
+          <span></span>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Languages</h3>
+            <div class="chip-row">
+              <span>Python</span>
+              <span>Java</span>
+              <span>Kotlin</span>
+              <span>C/C++</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>SQL</span>
+              <span>Go</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Frameworks</h3>
+            <div class="chip-row">
+              <span>React</span>
+              <span>Next.js</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>FastAPI</span>
+              <span>Flask</span>
+              <span>Jetpack Compose</span>
+              <span>Material UI</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Data &amp; ML</h3>
+            <div class="chip-row">
+              <span>pandas</span>
+              <span>NumPy</span>
+              <span>scikit-learn</span>
+              <span>XGBoost</span>
+              <span>PyTorch</span>
+              <span>Matplotlib</span>
+              <span>Seaborn</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Platforms &amp; Tools</h3>
+            <div class="chip-row">
+              <span>AWS</span>
+              <span>GCP</span>
+              <span>Docker</span>
+              <span>GitHub Actions</span>
+              <span>Firebase</span>
+              <span>MongoDB</span>
+              <span>PostgreSQL</span>
+              <span>Linux</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-panel">
+        <div class="section-heading">
+          <h2>Projects</h2>
+          <span></span>
+        </div>
+
+        <div class="section-intro">
+          <p>Selected work from GitHub and recent builds, focused on real analytics products and applied engineering.</p>
+          <a href="https://github.com/shaque32" target="_blank" rel="noopener">
+            View all on GitHub
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-topline">
+              <p>Jan. 2026 - Present</p>
+              <a href="https://www.lineupoptimization.com/" target="_blank" rel="noopener">Live site</a>
+            </div>
+            <h3>LineupOptimization.com</h3>
+            <p>
+              Founded and operate a production baseball analytics platform adopted across the Atlantic League,
+              helping front offices construct data-driven batting orders.
+            </p>
+            <ul>
+              <li>Evaluates all 362,880 batting-order permutations against a proprietary BRP metric.</li>
+              <li>Uses NumPy vectorization and memoized baserunner-state transitions for sub-second query latency.</li>
+              <li>Built with React, TypeScript, FastAPI, PostgreSQL, AWS, CI/CD, authentication, and team analytics.</li>
+            </ul>
+            <div class="chip-row small">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>PostgreSQL</span>
+              <span>AWS</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <p>2025</p>
+              <a href="https://github.com/shaque32/RavensBeyondReceivingYards" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <h3>Ravens Beyond Receiving Yards</h3>
+            <p>
+              A player-tracking analytics system for evaluating WR/CB matchups beyond box-score production.
+            </p>
+            <ul>
+              <li>Built a three-stage pipeline for data cleaning, coverage classification, and matchup outcome prediction.</li>
+              <li>Trained XGBoost models using separation, release burst, route context, and game-situation features.</li>
+              <li>Produced metrics used to reason about receiver effectiveness and shutdown coverage.</li>
+            </ul>
+            <div class="chip-row small">
+              <span>Python</span>
+              <span>Jupyter</span>
+              <span>XGBoost</span>
+              <span>scikit-learn</span>
+              <span>NFL tracking data</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <p>2025</p>
+              <a href="https://github.com/shaque32/NCAA-Free-Throw-Optimization" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <h3>NCAA Free Throw Optimization</h3>
+            <p>
+              A decision tool that finds when a team should intentionally foul in NCAA basketball endgames.
+            </p>
+            <ul>
+              <li>Models endgame scenarios as a Markov Decision Process with Monte Carlo validation.</li>
+              <li>Implements NCAA bonus rules, player-specific free throw inputs, and win-probability visualizations.</li>
+              <li>Ships as a FastAPI and React app with CSV import, exports, and scenario controls.</li>
+            </ul>
+            <div class="chip-row small">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>React</span>
+              <span>MDP</span>
+              <span>Monte Carlo</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <p>2025</p>
+              <a href="https://github.com/shaque32/politicsTracker" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <h3>Politics Trade Market Tracker</h3>
+            <p>
+              Native Android app for browsing live prediction-market contracts, tracking favorites,
+              and reviewing price history.
+            </p>
+            <ul>
+              <li>Built with Kotlin, Jetpack Compose, ViewModel, LiveData, Room, WorkManager, and Retrofit.</li>
+              <li>Uses offline-first architecture with background refresh, cached market data, and explicit loading states.</li>
+              <li>Includes reusable Compose cards, charts, filter chips, and watchlist interactions.</li>
+            </ul>
+            <div class="chip-row small">
+              <span>Kotlin</span>
+              <span>Compose</span>
+              <span>Room</span>
+              <span>Retrofit</span>
+              <span>WorkManager</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <p>Aug 2024 - Present</p>
+              <span>Startup</span>
+            </div>
+            <h3>ReadRight</h3>
+            <p>
+              Co-founded an EdTech startup and built a gamified reading web app with real-time progress
+              tracking, badges, and interactive quizzes.
+            </p>
+            <ul>
+              <li>Built cross-platform app flows with React, TypeScript, Next.js, Firebase Auth, and Firestore.</li>
+              <li>Supported backend quiz and progress mechanics using Node.js and MongoDB.</li>
+            </ul>
+            <div class="chip-row small">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Next.js</span>
+              <span>Firebase</span>
+              <span>MongoDB</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-heading">
+          <h2>Experience</h2>
+          <span></span>
+        </div>
+
+        <div class="experience-layout">
+          <div>
+            <h3 class="column-label">Work</h3>
+            <div class="timeline">
+              <article class="timeline-item">
+                <span class="timeline-dot active"></span>
+                <div class="timeline-card">
+                  <div class="timeline-header">
+                    <h4>Baltimore Ravens</h4>
+                    <span>Aug. 2025 - Dec. 2025</span>
+                  </div>
+                  <p class="role">Sports Analytics Intern</p>
+                  <p class="location">Baltimore, MD</p>
+                  <ul>
+                    <li>Shipped a Python evaluation framework adopted by the Ravens' quantitative staff for WR/CB performance analysis.</li>
+                    <li>Engineered ETL over NFL Next Gen Stats player-tracking data, automating per-game feature generation.</li>
+                    <li>Trained Random Forest and XGBoost models for Wide Receiver Effectiveness and Shutdown Index metrics.</li>
+                  </ul>
+                  <div class="chip-row small">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>pandas</span>
+                    <span>NumPy</span>
+                    <span>scikit-learn</span>
+                    <span>XGBoost</span>
+                  </div>
                 </div>
-                <div class = "about-col-2">
-                    <h1 class = "sub-title"> About Me</h1>
-                    <br>
-                    <p>My name is Shayan Haque, and I am a freshman studying Computer Science at The Johns Hopkins University</p>
-                    <br>
-                    <p>I enjoy most STEM classes whether it be Physics or Chemistry. However, it is Computer Science where I have truly found my passion.</p>
-                    <br>
-                    <p>Outside of the classroom, I love watching movies, reading books, and playing basketball. </p>
-                    <br>
-                    <br>
-                   
+              </article>
 
-                    
-                    <div class="tab-titles">
-                        <p class = "tab-links active-link" onclick = "opentab('skills')"><strong>Leadership</strong></p>
-                        <p class = "tab-links" onclick = "opentab('Experience')"><strong>Experience</strong></p>
-                        <p class = "tab-links" onclick = "opentab('Education')"><strong>Education/Skills</strong></p>
-
-                    </div>
-                    <div class="tab-contents active-tab" id = "skills">
-                        <ul>
-                            <li><span><strong>Class of 2024 President</strong></span><br>2020 - Present</li>
-                            <li><span><strong>FRC Team 6911 Design Team Lead</strong></span><br>2021 - Present</li>
-                            <li><span><strong>Computer Science Club President</strong></span><br>2023 - Present</li>
-                            <li><span><strong>Computer Science Honor Society VP</strong></span><br>2022 - 2023</li>
-
-
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id = "Experience">
-                        <ul>
-                            <li><span><strong>Werfen Diagnostics</strong></span><br>STEM Intern (2023) </li>
-                            <li><span><strong>VDart Inc.</strong></span><br>Data Science Intern (Summer 2021) </li>
-                            <li><span><strong>Pozitive Planet</strong></span><br>Computer Science Intern (2022 - Present)</li>
-
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id = "Education">
-                        <ul>
-                            <li><span><strong>2020-2024</strong></span><br>Tappan Zee High School<br>GPA: 103.22 | Valedictorian </li>
-                            <li><span><strong>Coding Languages</strong></span><br>Python, Java, JavaScript, HTML, CSS</li>
-                            <li><span><strong>CAD</strong></span><br>Fusion 360, Autodesk Inventor, AutoCAD</li>
-
-
-
-                        </ul>
-                    </div>
+              <article class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-card">
+                  <div class="timeline-header">
+                    <h4>PE Solutions</h4>
+                    <span>June 2026 - Aug. 2026</span>
+                  </div>
+                  <p class="role">Software Engineering &amp; AI Intern</p>
+                  <p class="location">New York, NY</p>
+                  <ul>
+                    <li>Shipped a production electricity-demand forecasting service that cut MAE by 20% versus the legacy model.</li>
+                    <li>Containerized an XGBoost forecasting pipeline and exposed it as a FastAPI REST microservice on AWS.</li>
+                    <li>Added tests, CI checks, uncertainty visualizations, and a deployment runbook for future model releases.</li>
+                  </ul>
+                  <div class="chip-row small">
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>Docker</span>
+                    <span>AWS</span>
+                    <span>CI/CD</span>
+                    <span>XGBoost</span>
+                  </div>
                 </div>
-
+              </article>
             </div>
-        </div>
-    </div>
-<!------tutoring-----------
-<div id="tutoring">
-    <div class="container">
-        <h1 class = "sub-title">Tutoring</h1>
-        <div class = "services-list">
+          </div>
+
+          <aside class="side-stack">
             <div>
-                <h2>Robotics/CS Tutoring</h2>
-                <p>I will tutor</p>
-                <p>I will tutor</p>
-                <p>I will tutor</p>
-                <p>I will tutor</p>
-                <p>I will tutor</p>
-                <p>I will tutor</p>
-
-                <a href = "#">learn more</a>
+              <h3 class="column-label">Education</h3>
+              <article class="info-card">
+                <h4>Johns Hopkins University</h4>
+                <p>B.S. Computer Science</p>
+                <span>Expected May 2028</span>
+              </article>
             </div>
+
             <div>
-                <h2>AP Test Tutoring</h2>
-                <p>I will tutor</p>
-                <a href = "#">learn more</a>
+              <h3 class="column-label">Coursework</h3>
+              <div class="chip-row stacked">
+                <span>Data Structures</span>
+                <span>Algorithms</span>
+                <span>Intermediate Programming</span>
+                <span>Discrete Math</span>
+                <span>Linear Algebra</span>
+                <span>Probability</span>
+                <span>Calculus III</span>
+              </div>
             </div>
+
             <div>
-             <h2>SAT Prep Tutoring</h2>
-                <p>I will tutor</p>
-                <a href = "#">learn more</a>
+              <h3 class="column-label">Top Focus</h3>
+              <div class="chip-row stacked highlighted">
+                <span>Machine Learning</span>
+                <span>Sports Analytics</span>
+                <span>Backend Systems</span>
+                <span>AI Product Engineering</span>
+                <span>Data Pipelines</span>
+              </div>
             </div>
+          </aside>
         </div>
-    </div>
-</div>
------>
-<!---------portfolio------->
-<div id = "porfolio">
-    <div class = "container">
-        <h1 class = "sub-title"> My Work</h1>
-        <div class = "work-list">
-            
-         <div class = "work">
-            <img src = "images/ourYear.png">
-            <div class = "layer">
-                <h3>FRC Team 6911 Robot Design (2024)</h3> 
-                <p>These are images of the design of the swerve drivetrain we are planning to use this year</p>
-                <a href = "https://drive.google.com/drive/folders/1W4FDNBJ3VT49HZQf_B7BKxGRUbNanZQw?usp=sharing" target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </section>
 
-            </div>
-         </div>
-         <div class = "work">
-            <img src = "images/myYear.png">
-            <div class = "layer">
-                <h3>FRC Team 6911 Robot Design (2023)</h3> 
-                <p>These are the renderings of our 2023 FRC competition robot I designed</p>
-                <a href = "https://drive.google.com/drive/folders/1xr1VYDcS6fMUf4Hq98VqhII-2af89aaU?usp=sharing" target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-
-            </div>
+      <section id="contact" class="section section-panel contact-section">
+        <div class="contact-card">
+          <p class="eyebrow">Available for internship and early-career conversations</p>
+          <h2>Want to talk software, sports analytics, or applied AI?</h2>
+          <p>
+            I am looking for teams where I can ship production software, learn quickly, and bring a data-driven
+            builder's mindset to hard problems.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="mailto:shayanhaqueny@gmail.com">Email Me</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/shayanarikhaque/" target="_blank" rel="noopener">
+              LinkedIn
+            </a>
+            <a class="button secondary" href="https://github.com/shaque32" target="_blank" rel="noopener">
+              GitHub
+            </a>
+          </div>
         </div>
-         <div class = "work">
-            <img src = "images/werfen.png">
-            <div class = "layer">
-                <h3>Werfen Robot (2023)</h3> 
-                <p>This was a robot/team mascot I helped design for the medical diagnostics company Werfen</p>
-                <a href = "https://drive.google.com/drive/folders/1bZS8KjdEvpsoeMipmWqKwRPaqKOVhGau?usp=sharing" target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </section>
+    </main>
 
-            </div>
-        </div>
-         <div class = "work">
-            <img src = "images/sodoku.png">
-            <div class = "layer">
-                <h3>Sodoku (2023)</h3> 
-                <p>This game allows users to progress through Sodoku levels with the ability to choose harder or easier grids </p>
-                <a href = "https://drive.google.com/file/d/158PT4pAqNeTgooG_Mgz1oeLX4rFl2BPP/view?usp=sharing" target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-
-            </div>
-        </div>
-
-         <div class = "work">
-            <img src = "images/gioYear.png">
-            <div class = "layer">
-                <h3>FRC Team 6911 Robot Design (2022)</h3> 
-                <p>These are the renderings of our 2022 FRC competition robot I helped design</p>
-                <a href = "https://drive.google.com/drive/folders/1Qc_62ocrG0exNBbqlQ9WOUZlbHMtZaGp?usp=sharing" target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-
-            </div>
-        </div>
-
-         <div class = "work">
-            <img src = "images/KFL.png">
-            <div class = "layer">
-                <h3>Football Manager App (2022)</h3> 
-                <p>This game allows users to experience what it is like to manage a football team from balancing budgets to making cuts</p>
-                <a href = "https://drive.google.com/drive/folders/1yFKtPP3feMfaChNzWNGQo_5q63exT-fU?usp=sharing" target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-
-            </div>
-        </div>
-         <div class = "work">
-            <img src = "images/madness.png">
-            <div class = "layer">
-                <h3>Moss Madness (2022)</h3> 
-                <p>This game allows you and a friend to play football against each other</p>
-                <a href = "https://drive.google.com/file/d/1TBfBTzyXwSYeeF_Ia3Nn6Yr2mw8jE_ss/view?usp=sharing" target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-
-            </div>
-        </div>
-         <div class = "work">
-            <img src = "images/betterOlympics.png">
-            <div class = "layer">
-                <h3>Olympic App (2021)</h3> 
-                <p>This app filters through data to organize the past olympics winners in a useful way</p>
-                <a href = "https://drive.google.com/file/d/1ShXHkpraVY_3MkkYc1lVTr_tAuMqRiJd/view?usp=sharing" target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-        </div>
-         <div class = "work">
-            <img src = "images/mountainsApp.png">
-            <div class = "layer">
-                <h3>Mountains App (2020)</h3> 
-                <p>This app filters through datasets to allow users to explore mountains</p>
-                <a href = "https://studio.code.org/projects/applab/oBou_mOIbwh3YEr-SlttyganUPkE_dEs2230n1NnAIM" target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-
-            </div>
-        </div>
-
-
-         <div class = "work">
-            <img src = "images/bacon.png">
-            <div class = "layer">
-                <h3>Steal the Bacon Game (2020)</h3> 
-                <p>This game is meant to simulate the popular children's game 'Steal the Bacon'</p>
-                <a href = "https://watch.screencastify.com/v/uq0oKOK6vDOWduYkruoB" target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-
-            </div>
-        </div>
-        </div>
-        <br>
-        <br>
-
-        <div id = "load-more">Load More</div>
-    </div>
-</div>
-<!--fg----------contact-----gb-----gb---->
-<div id = "contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class = "sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>shayanhaque32@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>917-734-1504</p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/shayanhaque_/" target = "_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://twitter.com/ShayanHaque3200" target = "_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
-                   <a href="www.linkedin.com/in/shayan-haque-5206b7281" target = "_blank"><i class="fa-brands fa-linkedin"></i></a>
-
-                </div>
-                <a href="images/Fixed- shayan resume copy.pdf" download class = "btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <input type = "text" name ="Name" placeholder="Your Name" required>
-                    <input type = "email" name = "email" placeholder = "Your Email" required>
-                    <textarea name = "Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type = "submit" class ="btn btn2">Submit</button>
-                </form>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks ){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents ){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-    </script>
-    <script>
-      let loadMoreBtn = document.querySelector('#load-more');
-let currentItem = 4;
-let workItems = document.querySelectorAll('.container .work-list .work');
-
-loadMoreBtn.onclick = () => {
-    for (let i = currentItem; i < currentItem + 4 && i < workItems.length; i++) {
-        workItems[i].style.display = 'inline-block';
-    }
-    currentItem += 4;
-
-    if (currentItem >= workItems.length) {
-        loadMoreBtn.style.display = 'none';
-    }
-}
-
-    </script>
+    <footer class="site-footer">
+      <div>
+        <strong>Shayan Haque</strong>
+        <p>Software Engineering | Data Science | AI | Sports Analytics</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/shaque32" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/shayanarikhaque/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:shayanhaqueny@gmail.com" aria-label="Email">
+          <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
 
     <script>
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu() {
-    sidemenu.style.right = "-200px";
-    var icons = document.querySelectorAll('.fa-solid');
-    icons.forEach(function (icon) {
-        icon.style.display = 'none';
-    });
-}
-    </script>
+      const roles = [
+        "Third-year CS @ Johns Hopkins",
+        "Sports Analytics Builder",
+        "Software Engineering & AI",
+        "Python, FastAPI, React",
+        "ML + Data Pipelines"
+      ];
+      const roleDisplay = document.querySelector("#role-display");
+      let roleIndex = 0;
 
+      function rotateRole() {
+        if (!roleDisplay) return;
+        roleIndex = (roleIndex + 1) % roles.length;
+        roleDisplay.textContent = roles[roleIndex];
+      }
+
+      setInterval(rotateRole, 2400);
+
+      const navToggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector("#primary-navigation");
+
+      if (navToggle && navLinks) {
+        navToggle.addEventListener("click", () => {
+          const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+          navToggle.setAttribute("aria-expanded", String(!isOpen));
+          navLinks.classList.toggle("is-open");
+        });
+
+        navLinks.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            navToggle.setAttribute("aria-expanded", "false");
+            navLinks.classList.remove("is-open");
+          });
+        });
+      }
+    </script>
   </body>
-
 </html>
